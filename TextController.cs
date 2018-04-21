@@ -20,12 +20,12 @@ public class TextController : MonoBehaviour {
 		if (myState == States.synopsis)				{StateSynopsis ();}
 		else if (myState == States.start)			{StateStart ();}
 		else if (myState == States.ludus)			{StateLudus ();}
-		else if (myState == States.frobozz_0)		{StateFrobozz_0 ();}
+		else if (myState == States.frobozz_0)			{StateFrobozz_0 ();}
 		else if (myState == States.doom_0)			{StateDoom_0 ();}
-		else if (myState == States.frobozz_1)		{StateFrobozz_1 ();}
+		else if (myState == States.frobozz_1)			{StateFrobozz_1 ();}
 		else if (myState == States.doom_1)			{StateDoom_1 ();}
 		else if (myState == States.syrinx)			{StateSyrinx ();}
-		else if (myState == States.anorak_temple)	{StateAnorakTemple ();}
+		else if (myState == States.anorak_temple)		{StateAnorakTemple ();}
 		else if (myState == States.win)				{StateWin ();}
 	}
 	
@@ -52,8 +52,8 @@ public class TextController : MonoBehaviour {
 					"     A place among the high scorers\n\n" +
 					"Press F to go on Frobozz planet, L to go on Ludus planet, to go on Doom planet.";
 		if (Input.GetKeyDown (KeyCode.F))			{myState = States.frobozz_0;}
-		else if (Input.GetKeyDown (KeyCode.L))		{myState = States.ludus;}
-		else if (Input.GetKeyDown (KeyCode.D))		{myState = States.doom_0;}
+		else if (Input.GetKeyDown (KeyCode.L))			{myState = States.ludus;}
+		else if (Input.GetKeyDown (KeyCode.D))			{myState = States.doom_0;}
 	}
 	
 	void StateFrobozz_0 (){
@@ -72,7 +72,7 @@ public class TextController : MonoBehaviour {
 					"Let's find next Jade key!\n\n" +
 					"Press F to go on Frobozz planet, press D to go on Doom planet.";
 		if (Input.GetKeyDown (KeyCode.F))			{myState = States.frobozz_1;}
-		else if (Input.GetKeyDown (KeyCode.D))		{myState = States.doom_1;}
+		else if (Input.GetKeyDown (KeyCode.D))			{myState = States.doom_1;}
 	}
 	
 	void StateDoom_0 (){
